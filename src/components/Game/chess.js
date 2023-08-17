@@ -1369,6 +1369,7 @@ class Queen {
     return false;
   }
 }
+
 class Knight {
   constructor(player) {
     this.player = player;
@@ -1521,6 +1522,7 @@ class Rook {
     return false;
   }
 }
+
 class filler_piece {
   constructor(player) {
     this.player = player;
