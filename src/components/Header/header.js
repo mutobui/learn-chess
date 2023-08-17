@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { i18n } from "../../i18n/index";
 
-import "./header.styles.css";
+import "./Header.styles.css";
 import LanguagesPopup from "./LanguagesPopup/LanguagesPopup";
 import armenian from "../../images/armenia.png";
 import russian from "../../images/russia.png";
@@ -25,13 +25,18 @@ function Header() {
             </Link>
           </div>
           <div className="header-item">
-            <Link to="/champions" className="navbar-brand">
-              {i18n.t("header.worldChampions")}
+            <Link to="/learn" className="navbar-brand">
+              Learn
             </Link>
           </div>
           <div className="header-item">
             <Link to="/game" className="navbar-brand">
               {i18n.t("header.play")}
+            </Link>
+          </div>
+          <div className="header-item">
+            <Link to="/champions" className="navbar-brand">
+              {i18n.t("header.worldChampions")}
             </Link>
           </div>
           <div>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { i18n } from "../../i18n/index";
 
-import "./Game.styles.css";
+import "./Learn.styles.css";
 import whiteKing from "../../images/white_king.png";
 import whiteBishop from "../../images/white_bishop.png";
 import whiteKnight from "../../images/white_knight.png";
@@ -1272,7 +1272,7 @@ class Board extends React.Component {
   }
 }
 
-export class Game extends React.Component {
+export class Learn extends React.Component {
   render() {
     return <Board />;
   }
@@ -1576,6 +1576,8 @@ function initializeBoard() {
   for (let i = 0; i < 64; i++) {
     if (squares[i] == null) squares[i] = new filler_piece(null);
   }
+
+  console.log("squares: ", JSON.stringify(squares));
 
   return squares;
 }

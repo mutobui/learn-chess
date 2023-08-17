@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./championsList.styles.css";
+import "./ChampionsList.styles.css";
 import champions from "./constants";
 import { i18n } from "../../i18n/index";
 import { withTranslation } from "react-i18next";
@@ -9,8 +9,8 @@ function ChampionsList() {
   return (
     <div className="container">
       <div className="flex">
-        <h1>{i18n.t("championsList.header")}</h1>
-        <p>{i18n.t("championsList.text")}</p>
+        <h1>{i18n.t("ChampionsList.header")}</h1>
+        <p>{i18n.t("ChampionsList.text")}</p>
         <div className="wrapper">
           {champions.map((champion) => (
             <div className="date-and-img">

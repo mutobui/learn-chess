@@ -1,4 +1,4 @@
-import { Game as Self } from "./chess";
+import { Game as Self } from "./Chess";
 
 import { withTranslation } from "react-i18next";
 
